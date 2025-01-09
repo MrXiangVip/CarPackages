@@ -1,0 +1,78 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    namespace 'com.tianmai.systemlibrary'
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.tianmai.systemlibrary"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        semiDriveX9 {
+            //storeFile file('../keystore/platform_9701.keystore')
+            storeFile file('../keystore/platform_9702.keystore')
+            storePassword 'android'
+            //keyAlias = 'platform.keystore'
+            keyAlias = 'androiddebugkey'
+            keyPassword 'android'
+            v1SigningEnabled true
+            v2SigningEnabled true
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.semiDriveX9
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            signingConfig signingConfigs.semiDriveX9
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    //修改点一
+    compileOnly files('libs/framework-wifi.stubs.system.jar')
+    compileOnly files('libs/framework-connectivity.stubs.system.jar')
+    compileOnly files('libs/framework-tethering.stubs.module_lib.jar')
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    // 依赖lib目录下的某个jar文件
+//    implementation files('libs/framework-wifi.stubs.system.jar')
+    implementation files('libs/classes.jar')
+    // 依赖lib目录下的所有以.jar结尾的文件
+    implementation fileTree(dir: 'libs', includes: ['*.jar'])
+}
+//修改点二
+gradle.projectsEvaluated {
+    tasks.withType(JavaCompile) {
+        Set<File> fileSet = options.bootstrapClasspath.getFiles();
+        List<File> newFileList = new ArrayList<>()
+        newFileList.add(new File("libs/framework-wifi.stubs.system.jar"))
+        newFileList.addAll(fileSet)
+        options.bootstrapClasspath = files(newFileList.toArray())
+    }
+}

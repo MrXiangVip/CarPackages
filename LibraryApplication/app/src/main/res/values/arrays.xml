@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_types" >
+        <item >系统 01</item>
+        <item >空调 0A</item>
+        <item >方控 0B</item>
+        <item >胎压 0C</item>
+        <item >雷达 0D</item>
+        <item >故障码 0E</item>
+        <item >虚拟开关 0F</item>
+        <item >MCU升级 7A</item>
+        <item >HUB数据 10</item>
+    </string-array>
+
+
+</resources>

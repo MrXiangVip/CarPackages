@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">系统自检</string>
+    <string name="invalid_file_type">不可用的文件\n</string>
+
+    <string name="system_update">系统升级</string>
+    <string name="wifi">WiFi</string>
+    <string name="wifi_ap">WiFi 热点</string>
+    <string name="gsensor">Gsensor(加速度和陀螺仪)</string>
+
+    <string name="mic_phone">麦克风 检测接口</string>
+    <string name="screen">屏幕 检测接口</string>
+    <string name="solid_state_drive">固态硬盘</string>
+    <string name="camera">摄像头</string>
+
+    <string name="gps">GPS</string>
+    <string name="uart">串口</string>
+    <string name="gyroscope">陀螺仪</string>
+    <string name="bluetooth">蓝牙</string>
+
+    <string name="radio">收音机</string>
+    <string name="rtc">RTC</string>
+    <string name="network">网络检测(4G/WIFI/以太网)</string>
+    <string name="usb">USB</string>
+
+    <string name="switching">开关量检测</string>
+    <string name="pulse">脉冲检测</string>
+    <string name="amplifier">功放检测</string>
+    <string name="output">输出检测</string>
+
+    <string name="debug_serial">调试串口</string>
+    <string name="car_mcu">车身MCU</string>
+    <string name="schedule_mcu">调度MCU</string>
+
+
+    <string name="wifi_ap_choose_2G">2.4 GHz Band</string>
+    <!-- Label for the radio button to only choose wifi ap 5GHz band [CHAR LIMIT=25]-->
+    <string name="wifi_ap_choose_5G">5.0 GHz Band</string>
+    <!-- Label for the radio button to prefer 5GHz wifi ap band  [CHAR LIMIT=80]-->
+    <string name="wifi_ap_prefer_5G">5.0 GHz Band preferred</string>
+
+    <string name="wifi_hotspot_wpa2_personal">WPA2-Personal</string>
+    <!-- Label for Wifi security type WPA2/WPA3-Personal [CHAR LIMIT=25]-->
+    <string name="wifi_hotspot_wpa3_transition_personal">WPA2/WPA3-Personal</string>
+    <!-- Label for Wifi security type WPA2-Personal [CHAR LIMIT=25]-->
+    <string name="wifi_hotspot_wpa3_personal">WPA3-Personal</string>
+    <!-- Label for Wifi security type None-->
+    <string name="wifi_hotspot_security_none">None</string>
+</resources>

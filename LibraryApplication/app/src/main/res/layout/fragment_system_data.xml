@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="车身系统"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/getMcuVersion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="点击按钮 ,主动获取 mcu 版本"/>
+            <Button
+                android:id="@+id/getSystemAcc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="点击按钮 ,主动获取 acc状态"/>
+            <Button
+                android:id="@+id/getSystemTime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="点击按钮,主动获取时间缓存(获取一个没有缓存的值)"/>
+            <Button
+                android:id="@+id/getCarDomain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="点击按钮 ,主动获取 车身域"/>
+            <Button
+                android:id="@+id/getCarExternalDomain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="点击按钮 ,主动获取 车身外域"/>
+            <Button
+                android:id="@+id/getCarFrontDomain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="点击按钮 ,主动获取 车身前域"/>
+
+            <Button
+                android:id="@+id/getCarBackDomain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="点击按钮 ,主动获取 车身后域"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/contentFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="主动获取的缓存显示在这行"
+            android:textColor="@color/white"
+            android:background="@color/cardview_dark_background"/>
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/handShake"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送握手信号报文"/>
+        <Button
+            android:id="@+id/syncAndroidTimeToMcu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="同步android时间到mcu"/>
+        <Button
+            android:id="@+id/fetchMcuVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送请求mcu版本号的字节串"/>
+        <Button
+            android:id="@+id/surroundView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送360快起数据到mcu"/>
+    </LinearLayout>
+
+</LinearLayout>

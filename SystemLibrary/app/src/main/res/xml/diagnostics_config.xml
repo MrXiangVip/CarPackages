@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <Config data_in_sharepreference="true">
+        <component
+            name="系统升级"
+            fragment="com.tianmai.systemlibrary.fragments.SystemUpdateFragment"
+            title="@string/system_update">
+        </component>
+
+        <component
+            name="网络检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.NetworkFragment"
+            title="@string/network">
+        </component>
+
+        <component
+            name="WIFI 热点"
+            fragment="com.tianmai.systemlibrary.fragments.WifiApFragment"
+            title="@string/wifi_ap">
+        </component>
+
+        <component
+            name="GSENSOR"
+            fragment="com.tianmai.systemlibrary.fragments.GsensorFragment"
+            title="@string/gsensor">
+        </component>
+
+        <component
+            name="麦克风"
+            fragment="com.tianmai.systemlibrary.fragments.MicPhoneFragment"
+            title="@string/mic_phone">
+        </component>
+        <component
+            name="屏幕"
+            fragment="com.tianmai.systemlibrary.fragments.ScreenFragment"
+            title="@string/screen">
+        </component>
+        <component
+            name="固态硬盘"
+            fragment="com.tianmai.systemlibrary.fragments.SSDFragment"
+            title="@string/solid_state_drive">
+        </component>
+        <component
+            name="摄像头"
+            fragment="com.tianmai.systemlibrary.fragments.CameraFragment"
+            title="@string/camera">
+        </component>
+
+        <component
+            name="GPS 检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.GPSFragment"
+            title="@string/gps">
+        </component>
+        <component
+            name="串口 检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.UartFragment"
+            title="@string/uart">
+        </component>
+
+        <component
+            name="蓝牙检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.BluetoothFragment"
+            title="@string/bluetooth">
+        </component>
+
+        <component
+            name="收音机检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.RadioFragment"
+            title="@string/radio">
+        </component>
+        <component
+            name="RTC 检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.RtcFragment"
+            title="@string/rtc">
+        </component>
+
+        <component
+            name="USB 检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.USBFragment"
+            title="@string/usb">
+        </component>
+
+        <component
+            name="开关量 检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.SwitchFragment"
+            title="@string/switching">
+        </component>
+        <component
+            name="脉冲 检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.PulseFragment"
+            title="@string/pulse">
+        </component>
+        <component
+            name="功放 检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.AmplifierFragment"
+            title="@string/amplifier">
+        </component>
+        <component
+            name="输出 检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.OutputFragment"
+            title="@string/output">
+        </component>
+
+        <component
+            name="调试 串口检测"
+            fragment="com.tianmai.systemlibrary.fragments.DebugSerialFragment"
+            title="@string/debug_serial">
+        </component>
+        <component
+            name="车身MCU检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.CarMcuFragment"
+            title="@string/car_mcu">
+        </component>
+        <component
+            name="调度MCU检测接口"
+            fragment="com.tianmai.systemlibrary.fragments.ScheduleMcuFragment"
+            title="@string/schedule_mcu">
+        </component>
+    </Config>
+
+</resources>
