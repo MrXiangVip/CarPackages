@@ -16,7 +16,11 @@
             android:id="@+id/update_mcu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="点击按钮 ,升级mcu版本"/>
-
+            android:text="点击按钮,升级MCU版本"/>
+        <TextView
+            android:id="@+id/update_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="展示升级状态"/>
     </LinearLayout>
 </LinearLayout>
