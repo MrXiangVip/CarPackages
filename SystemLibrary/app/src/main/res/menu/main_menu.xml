@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/autoTest"
+        android:title="自动测试"
+        android:icon="@drawable/start"
+        android:showAsAction="always"
+        />
+    <item android:id="@+id/clearTest"
+        android:title="清除状态"
+        android:icon="@drawable/clear"
+        android:showAsAction="always"
+        />
+</menu>

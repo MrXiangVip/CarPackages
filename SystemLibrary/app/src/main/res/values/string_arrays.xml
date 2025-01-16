@@ -18,6 +18,14 @@
 <resources>
 
 
+    <array name="screen_paper">
+        <item>@android:color/holo_red_light</item>
+        <item>@android:color/holo_green_light</item>
+        <item>@android:color/holo_orange_light</item>
+        <item>@android:color/holo_blue_light</item>
+        <item>@android:color/black</item>
+        <item>@android:color/white</item>
+    </array>
     <!-- Security types for wireless tether -->
     <string-array name="wifi_tether_security">
         <item>@string/wifi_hotspot_security_none</item>

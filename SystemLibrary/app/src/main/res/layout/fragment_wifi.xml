@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
-    <Switch
-        android:id="@+id/wifiToggle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WiFi 开关"/>
-<!--    <TextView-->
-<!--        android:id="@+id/wifiInfo"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:text="连接到的wifi"/>-->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/wifiRecyclerview"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
-</LinearLayout>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Switch
+            android:id="@+id/wifiToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="WiFi 开关"/>
+        <!--    <TextView-->
+        <!--        android:id="@+id/wifiInfo"-->
+        <!--        android:layout_width="wrap_content"-->
+        <!--        android:layout_height="wrap_content"-->
+        <!--        android:text="连接到的wifi"/>-->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/wifiRecyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include layout="@layout/group_judge_panel"/>
+</FrameLayout>
